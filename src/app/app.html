@@ -1,0 +1,15 @@
+<header class="top">
+  <a routerLink="/" class="brand">netAgency</a>
+  <nav>
+    <a routerLink="/annonces">Annonces</a>
+    <a routerLink="/contact">Contact</a>
+    @if (auth.isStaff()) {
+      <a routerLink="/admin">Espace agent</a>
+      <button type="button" (click)="logout()">Déconnexion</button>
+    } @else {
+      <a routerLink="/connexion">Connexion</a>
+    }
+  </nav>
+</header>
+<main><router-outlet /></main>
+<footer class="foot">© netAgency</footer>

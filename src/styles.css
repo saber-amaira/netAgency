@@ -1,0 +1,28 @@
+body { margin: 0; font-family: system-ui, sans-serif; color: #1c2430; background: #f6f7f9; }
+h1, h2 { color: #12355b; }
+.hero { background: #e4edf7; padding: 2.5rem 1.5rem; border-radius: 8px; margin-bottom: 2rem; }
+.row, .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.col { display: flex; flex-direction: column; gap: .6rem; }
+.narrow { max-width: 520px; }
+input, select, textarea { padding: .55rem; border: 1px solid #b9c2cf; border-radius: 4px; font: inherit; }
+button, .btn { padding: .55rem 1rem; border: 0; border-radius: 4px; background: #1b6ec2; color: #fff; cursor: pointer; text-decoration: none; font: inherit; }
+button.danger { background: #b3261e; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.card { display: block; background: #fff; border-radius: 8px; overflow: hidden; color: inherit; text-decoration: none; box-shadow: 0 1px 4px #0002; }
+.card img, .card .ph { width: 100%; height: 180px; object-fit: cover; background: #dde3ea; display: flex; align-items: center; justify-content: center; }
+.card .body { padding: .8rem; }
+.card h3 { margin: .3rem 0; }
+.badge { font-size: .75rem; background: #e4edf7; padding: .15rem .5rem; border-radius: 99px; }
+.price { font-weight: 700; color: #12355b; font-size: 1.2rem; margin: .2rem 0; }
+.meta { color: #5b6573; margin: .2rem 0; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .5rem; margin: 1rem 0; }
+.gallery img { width: 100%; height: 170px; object-fit: cover; border-radius: 6px; }
+.gallery figure { margin: 0; }
+.two { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .two { grid-template-columns: 1fr; } }
+table { width: 100%; border-collapse: collapse; background: #fff; margin-bottom: 2rem; }
+th, td { text-align: left; padding: .5rem; border-bottom: 1px solid #e1e5ea; vertical-align: top; }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+.pre { white-space: pre-wrap; }
+.error { color: #b3261e; }
+.ok { color: #1a7f37; }
